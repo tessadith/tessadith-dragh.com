@@ -1,0 +1,51 @@
+{
+  "name": "tessadith-dragh.com",
+  "description": "Source code of tessadith-dragh.com.me",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tessadith/tessadith-dragh.com.git"
+  },
+  "browser": {
+    "fss": "./src/javascript/lib/fss.min.js",
+    "jfp": "./src/javascript/lib/jquery-floating-placeholder.min.js"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "coffeeify",
+      "uglifyify"
+    ]
+  },
+  "browserify-shim": {
+    "fss": {
+      "exports": "plugin"
+    },
+    "jfp": {
+      "exports": "jfp",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    }
+  },
+  "devDependencies": {
+    "browser-sync": "~2.26.7",
+    "browserify": "~16.5.0",
+    "browserify-shim": "~3.8.14",
+    "coffeeify": "~2.0.1",
+    "gulp": "^3.9.0",
+    "gulp-changed": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-util": "^3.0.8",
+    "pretty-hrtime": "~1.0.3",
+    "require-dir": "^1.2.0",
+    "vinyl-source-stream": "~2.0.0",
+    "watchify": "~3.11.1",
+    "gulp-jade": "~1.1.0",
+    "gulp-less": "~4.0.1",
+    "uglifyify": "~5.0.2"
+  },
+  "dependencies": {
+    "jquery": "~3.5.0"
+  }
+}
