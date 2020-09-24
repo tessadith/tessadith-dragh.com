@@ -14,47 +14,54 @@ html(lang='en')
   body
     header(id='banner')
       .intro
-        h1.title Tess
-        p Hello, je suis une webdesigner
+        h1.title bienvenue
+        
 
     div(id='main')
       section
-        h2 À propos
-        p Hello, je suis Tessadith
-        p Je suis une webdesigner | graphiste multimédia qui aime conceptualiser et réaliser des produits de communication.
+        h2 Moi, c'est Tessadith
+        p Designer, belge, brodeuse à ses temps perdus, basée à Paris et à la recherche d'une opportunité.
+        p J'aime créer des projets avec une équipe où chacun apporte ses connaissances et expériences.
+    
 
       section.border
         h2 Projets
         figure.project
           a.ajax-popup-link(href="/projects/notify.html")
             figcaption
-              h3 Notify
+              h3 notify
             .thumb
-              img(src="images/conseiller_thumb.jpg")
+              img(src="images/notify-thumb.png")
         figure.project
           a.ajax-popup-link(href="/projects/rogergallet.html")
             figcaption
               h3 Roger &amp; Gallet
             .thumb
-              img(src="images/conseiller_thumb.jpg")
+              img(src="images/rogergallet-thumb.png")
         figure.project
           a.ajax-popup-link(href="/projects/bareminerals.html")
             figcaption
-              h3 Bareminerals
+              h3 bareMinerals
             .thumb
-              img(src="images/conseiller_thumb.jpg")
+              img(src="images/bareminerals-thumb.png")
         figure.project
           a.ajax-popup-link(href="/projects/lancome.html")
             figcaption
               h3 Lancôme
             .thumb
-              img(src="images/conseiller_thumb.jpg")
+              img(src="images/lancome-thumb.png")
+        figure.project
+          a.ajax-popup-link(href="/projects/bonne-maman.html")
+            figcaption
+              h3 Bonne Maman
+            .thumb
+              img(src="images/bonnemaman-thumb.png")
         figure.project
           a.ajax-popup-link(href="/projects/carrefour.html")
             figcaption
               h3 Carrefour
             .thumb
-              img(src="images/conseiller_thumb.jpg")
+              img(src="images/carrefour-thumb.png")
         figure.project
           a.ajax-popup-link(href="/projects/conseiller.html")
             figcaption
@@ -67,13 +74,13 @@ html(lang='en')
               h3 Fête des Lumières
             .thumb
               img(src="images/fdl_thumb.jpg")
-        figure.project
-          a.ajax-popup-link(href="/projects/floral.html")
-            figcaption
-              h3 Parc floral de Paris
-            .thumb
-              img(src="images/floral_thumb.jpg")
-        figure.project
+        //- figure.project
+        //-   a.ajax-popup-link(href="/projects/floral.html")
+        //-     figcaption
+        //-       h3 Parc floral de Paris
+        //-     .thumb
+        //-       img(src="images/floral_thumb.jpg")
+        //- figure.project
           a.ajax-popup-link(href="/projects/gatsby.html")
             figcaption
               h3 Gatsby - UI kit
@@ -91,7 +98,12 @@ html(lang='en')
               h3 Illustrations
             .thumb
               img(src="images/illustrations_thumb.jpg")
-
+        figure.project
+          a.ajax-popup-link(href="/projects/broderie.html")
+            figcaption
+              h3 Broderies
+            .thumb
+              img(src="images/broderie-thumb.png")
       section.border
         h2 Me contacter
         form#signup-form(action='http://formspree.io/draghtessadith@gmail.com', method='post')
@@ -109,10 +121,8 @@ html(lang='en')
       ul.icons
         li
           a.fa.fa-linkedin(href='https://www.linkedin.com/in/tessadithdragh/', target="_blank")
-        li
-          a.fa.fa-instagram(href='https://www.instagram.com/tess_a_dit/', target="_blank")
 
         .copyright
-          p Tessadith Dragh - 2017
+          p Tessadith Dragh - 2020
     script(src='/app.js')
     script(src='//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js')
